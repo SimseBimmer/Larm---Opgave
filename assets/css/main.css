@@ -1,0 +1,267 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+
+body {
+    margin: 1rem;
+    padding: 0;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-family: "Manrope", sans-serif;
+    font-weight: 300;
+    /* 300 - 400 */
+}
+
+/* centrer alt content */
+.container {
+    max-width: 1300px;
+    width: 100%;
+
+}
+
+/* #region HEADER */
+header img {
+    background-color: #c86262;
+    padding: 1rem;
+    width: 97.5%;
+}
+
+
+/* #endregion HEADER */
+/* #region NAVIGATION */
+/* flex i flex */
+nav {
+    background-color: #c86262;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 5px;
+}
+
+header ul {
+    display: flex;
+    margin: 0;
+    padding: 0 .5rem;
+    list-style: none;
+}
+
+header ul li {
+    padding: .5rem;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 300ms ease;
+}
+
+header ul:last-of-type li:first-of-type a {
+    background-color: #4d8ac7;
+    padding: .5rem;
+}
+
+header ul:last-of-type li:last-of-type a {
+    background-color: #4dc776;
+    padding: .5rem;
+}
+
+header ul:last-of-type li {
+    margin: 0;
+    padding: .5rem 0;
+    position: relative;
+    left: 8px;
+}
+
+/* NAVIGATION HOVER */
+header ul li a:hover {
+    opacity: .8;
+}
+
+/* #endregion NAVIGATION */
+/* #region ARTIKEL NECESSITIES */
+h1 {
+    color: #c86262;
+    font-weight: 600;
+    margin: 1rem;
+}
+
+h2 {
+    color: #c86262;
+    font-weight: 500;
+    margin: 1rem;
+}
+
+.About-Larm article {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.About-Larm article img {
+    border-radius: 1rem;
+}
+
+.About-Larm article h1 {
+    color: #e79687;
+}
+
+.About-Larm a {
+    float: right;
+}
+
+.grid-container-1 {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr);  */
+    gap: 1rem;
+}
+
+/* grid 2 */
+.grid-container-2 {
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.grid-container-2 img {
+    border-radius: 1rem;
+}
+
+/* grid 3 */
+/* tomtom */
+/* grid 4 TESTIMONIALS*/
+.grid-container-4 {
+    display: grid;
+    padding: 0 0 1rem 0;
+}
+.grid-container-4 article h1{
+    font-size: 150%;
+    margin: 0;
+    color: #e79687;
+}
+.grid-container-4 article a{
+    float: right;
+}
+.grid-container-4 article {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.grid-container-4 article section {
+    background-color: #fff;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.grid-container-4 article img {
+    background-color: #fff;
+    border-radius: 50% 50% 0 0;
+    padding: 1rem;
+    position: relative;
+    top: 5px;
+}
+
+/* grid 5 *FOOTER* */
+.grid-container-5 {
+    background-color: #c86262;
+    padding-bottom: 1.3rem;
+}
+
+.grid-container-5 h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 300%;
+}
+
+.grid-container-5 div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container-5 div ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+    margin: 1rem;
+    letter-spacing: 1px;
+    transition: 300ms ease;
+}
+
+/* hover */
+.grid-container-5 div ul li a:hover {
+    padding-left: 10px;
+    opacity: .8;
+}
+
+.grid-container-5 div ul li img {
+    position: relative;
+    top: 11px;
+    left: 0;
+    width: 5%;
+    height: 5%;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+/* split */
+.grid-container-5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+/* #endregion */
+
+
+
+
+
+
+/* #region MEDIA QUERIES*/
+/* phone */
+@media (max-width: 900px) {
+    .grid-container-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-container-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* tablet */
+@media (min-width: 900px) {
+    /*  */
+
+    .grid-container-2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-container-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* desktop */
+@media (min-width: 1800px) {
+    .grid-container-1 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-container-2 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-container-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* #endregion MEDIA QUERIES */
