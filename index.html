@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="assets/images/fav-icon.svg" type="image/x-icon">
     <title>L!arm</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/javaScript/JavaScript.js"></script>
+    <script src="assets/javaScript/JavaScript.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -17,10 +17,10 @@
         <!-- NAVIGATION -->
         <nav>
             <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Clients</a></li>
-                <li><a href="">Cases</a></li>
-                <li><a href="">Testimonials</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Clients">Clients</a></li>
+                <li><a href="#Cases">Cases</a></li>
+                <li><a href="#Testimonials">Testimonials</a></li>
             </ul>
             <ul>
                 <li><a href="">Sign In</a></li>
@@ -30,38 +30,44 @@
     </header>
     <main>
         <!-- ABOUT LARM -->
-            <section class="About-Larm">
+            <section class="About-Larm" id="About">
                 <h1>About Larm</h1>
                 <h2>Who we are & What we do</h2>
                     <div class="grid-container-1">
                         <article>
                             <img src="assets/images/Uploads/About-01.svg" alt="" srcset="">
+                            <div class="content">
                             <h1>About Us One</h1>
                             <p>Doloribus modi perspiciatis cupiditate molestias fugit, suscipit, eaque exercitationem aliquid rerum nulla ipsa consequatur, pariatur quos explicabo numquam! Nemo vitae tempore explicabo!</p>
                             <p>Quaerat voluptatibus dolorem doloribus optio natus officiis, perspiciatis rerum magni cumque libero, impedit sapiente ea? Facilis, corporis unde repellendus iusto vitae excepturi.</p>
                             <p>Hic magnam aliquid inventore soluta architecto? Animi vel nisi, laudantium, reiciendis deleniti rerum a officiis doloremque culpa similique consequatur doloribus, amet illo.</p>
                             <a href="#">Read More:</a>
+                            </div>
                         </article>
                         <article>
                             <img src="assets/images/Uploads/About-02.svg" alt="" srcset="">
+                            <div class="content">
                             <h1>About Us Two</h1>
                             <p>Doloribus modi perspiciatis cupiditate molestias fugit, suscipit, eaque exercitationem aliquid rerum nulla ipsa consequatur, pariatur quos explicabo numquam! Nemo vitae tempore explicabo!</p>
                             <p>Quaerat voluptatibus dolorem doloribus optio natus officiis, perspiciatis rerum magni cumque libero, impedit sapiente ea? Facilis, corporis unde repellendus iusto vitae excepturi.</p>
                             <p>Hic magnam aliquid inventore soluta architecto? Animi vel nisi, laudantium, reiciendis deleniti rerum a officiis doloremque culpa similique consequatur doloribus, amet illo.</p>
                             <a href="#">Read More:</a>
+                            </div>
                         </article>
                         <article>
                             <img src="assets/images/Uploads/About-03.svg" alt="" srcset="">
+                            <div class="content">
                             <h1>About Us Three</h1>
                             <p>Doloribus modi perspiciatis cupiditate molestias fugit, suscipit, eaque exercitationem aliquid rerum nulla ipsa consequatur, pariatur quos explicabo numquam! Nemo vitae tempore explicabo!</p>
                             <p>Quaerat voluptatibus dolorem doloribus optio natus officiis, perspiciatis rerum magni cumque libero, impedit sapiente ea? Facilis, corporis unde repellendus iusto vitae excepturi.</p>
                             <p>Hic magnam aliquid inventore soluta architecto? Animi vel nisi, laudantium, reiciendis deleniti rerum a officiis doloremque culpa similique consequatur doloribus, amet illo.</p>
                             <a href="#">Read More:</a>
+                            </div>
                         </article>
                     </div>
             </section>
         <!-- Clients -->
-            <section class="Clients">
+            <section class="Clients" id="Clients">
                 <h1>Clients</h1>
                 <h2>Coorporates & Clients</h2>
                 <div>
@@ -82,11 +88,22 @@
                 </div>
             </section>
         <!-- Cases -->
-            <section>
-                
+        <section class="Cases" id="Cases">
+            <h1>Cases</h1>
+            <h2>Selective Cases</h2>
+            <section id="favoriteParent">
+                <!-- big image -->
+                <div class="div1"><img id="mainImage" src="assets/images/Uploads/Case-01.svg" alt="Choose"></div>
+                <!-- tiles -->
+                <div class="div2"><img id="imgOne" src="assets/images/Uploads/Case-02.svg" alt="Choose"></div>
+                <div class="div3"><img id="imgTwo" src="assets/images/Uploads/Case-03.svg" alt="Choose"></div>
+                <div class="div4"><img id="imgThree" src="assets/images/Uploads/Case-04.svg" alt="Choose"></div>
+                <div class="div5"><img id="imgFour" src="assets/images/Uploads/Case-05.svg" alt="Choose"></div>
             </section>
+        </section>
+
         <!-- Testimonials -->
-        <section class="Testimonials">
+        <section class="Testimonials" id="Testimonials">
             <h1>Testimonials</h1>
             <h2>What do our Clients Say</h2>
             <div class="grid-container-4">
