@@ -1,3 +1,4 @@
+// #region GALLERY
 let mainImage = document.getElementById('mainImage')
 
 let smallImageOne = document.getElementById('imgOne')
@@ -53,3 +54,34 @@ smallImageFour.addEventListener('click', function (event) {
     smallImageFour.src = bigImageUrl
 
 })
+// #endregion GALLERY
+// #region Dialog
+        // open dialog JS 
+        var signInLink = document.getElementById('signin-link');
+        var dialogOverlay = document.getElementById('dialog-overlay');
+        var dialog = document.getElementById('dialog');
+
+        signInLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            showDialog();
+        });
+
+        function showDialog() {
+            dialogOverlay.style.display = 'block';
+            dialog.style.display = 'block';
+        }
+
+        function closeDialog() {
+            dialogOverlay.style.display = 'none';
+            dialog.style.display = 'none';
+        }
+
+//#region - Validering
+// signIn
+
+// SignUp
+
+
+
+//#endregion - Validering
+// #endregion Dialog
